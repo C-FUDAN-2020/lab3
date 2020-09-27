@@ -50,7 +50,7 @@
      
 格式字符，下面介绍基本用法。`格式字符需要与传入的参数类型保持一致`，下面是常见类型参数：
 
-     格式字符	                意义
+     格式字符	              意义
        d	    以十进制形式输出带符号整数(正数不输出符号)
        u	        以十进制形式输出无符号整数
        f	       以小数形式输出单、双精度实数
@@ -73,7 +73,7 @@
            return 0;
       }
 
-`同学们如果想更加深入了解printf函数，请查阅[这里](https://www.runoob.com/cprogramming/c-input-output.html)。`
+同学们如果想更加深入了解printf函数，请查阅[这里](https://www.runoob.com/cprogramming/c-input-output.html)。
 
 ### * scanf函数
 
@@ -96,7 +96,7 @@ C语言中我们经常使用 scanf 接收控制台的输入。
        return 0;
    }
    
-`同学们如果想深入了解scanf的用法，请参考[这里](https://www.runoob.com/cprogramming/c-input-output.html)。`
+同学们如果想深入了解scanf的用法，请参考[这里](https://www.runoob.com/cprogramming/c-input-output.html)。
 
 ## 熟悉C语言中数据类型
 
@@ -115,28 +115,28 @@ C 中的类型可分为以下几种：
 ### * 整数类型
 下表列出了关于标准整数类型的存储大小和值范围的细节：
 
-       类型	            存储大小	                           值范围
-       char	          1 字节	                     -128 到 127 或 0 到 255
-    unsigned char    	1 字节	                             0 到 255
-    signed char      	1 字节	                           -128 到 127
-       int	        2 或 4 字节	    -32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647
+       类型	           存储大小	                                  值范围
+       char	             1 字节	                     -128 到 127 或 0 到 255
+    unsigned char    	     1 字节	                             0 到 255
+    signed char      	     1 字节	                           -128 到 127
+       int	           2 或 4 字节	    -32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647
     unsigned int	   2 或 4 字节	               0 到 65,535 或 0 到 4,294,967,295
-      short	          2 字节	                         -32,768 到 32,767
+      short	             2 字节	                         -32,768 到 32,767
     unsigned short	     2 字节	                            0 到 65,535
-       long	          4 字节	                   -2,147,483,648 到 2,147,483,647
+       long	             4 字节	                   -2,147,483,648 到 2,147,483,647
     unsigned long	     4 字节	                       0 到 4,294,967,295
     
 ### * 浮点类型
 
 下表列出了关于标准浮点类型的存储大小、值范围和精度的细节：
 
-        类型	     存储大小	            值范围	            精度
-       float	       4 字节	    1.2E-38 到 3.4E+38	      6 位小数
-       double	       8 字节	    2.3E-308 到 1.7E+308	     15 位小数
-     long double	  16 字节	   3.4E-4932 到 1.1E+4932	     19 位小数
+        类型	     存储大小	        值范围	            精度
+       float	       4 字节	    1.2E-38 到 3.4E+38	        6 位小数
+       double	       8 字节	    2.3E-308 到 1.7E+308	        15 位小数
+     long double       16 字节	   3.4E-4932 到 1.1E+4932	19 位小数
 
 
-`具体数据类型的学习请同学们在课后自主学习完成`。
+`具体数据类型的学习请同学们在课后自主学习完成。`
 
 在这里举一个例子：
 
@@ -192,6 +192,6 @@ C 中的类型可分为以下几种：
      \0     空字符(NUL)
 
 ## Reference
-[1](https://www.runoob.com/cprogramming/c-input-output.html)[https://www.runoob.com/cprogramming/c-input-output.html]
+[1][https://www.runoob.com/cprogramming/c-input-output.html](https://www.runoob.com/cprogramming/c-input-output.html)
 
-[2](https://www.runoob.com/cprogramming/c-data-types.html)[https://www.runoob.com/cprogramming/c-data-types.html]
+[2][https://www.runoob.com/cprogramming/c-data-types.html](https://www.runoob.com/cprogramming/c-data-types.html)
