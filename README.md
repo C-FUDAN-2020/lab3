@@ -20,12 +20,12 @@
 
 提交：将提交物文档命名为学号_姓名 （如20302010000_王明），提交至超星学习通对应的作业中。
 
-截止时间：北京时间 2020年10月04日 23:59:59
+截止时间：北京时间 `2020年10月04日 23:59:59`
 
 
 ## 熟悉C语言中输入输出语句
 
-### printf函数
+### * printf函数
 `printf 函数`的调用格式为：
 
     printf("<格式化字符串>", <参量表>);
@@ -73,9 +73,9 @@
            return 0;
       }
 
-同学们如果想更加深入了解printf函数，请查阅[这里](https://www.runoob.com/cprogramming/c-input-output.html)。
+`同学们如果想更加深入了解printf函数，请查阅[这里](https://www.runoob.com/cprogramming/c-input-output.html)。`
 
-### scanf函数
+### * scanf函数
 
 C语言中我们经常使用 scanf 接收控制台的输入。
 
@@ -96,7 +96,7 @@ C语言中我们经常使用 scanf 接收控制台的输入。
        return 0;
    }
    
-同学们如果想深入了解scanf的用法，请参考[这里](https://www.runoob.com/cprogramming/c-input-output.html)。
+`同学们如果想深入了解scanf的用法，请参考[这里](https://www.runoob.com/cprogramming/c-input-output.html)。`
 
 ## 熟悉C语言中数据类型
 
@@ -115,29 +115,45 @@ C 中的类型可分为以下几种：
 ### * 整数类型
 下表列出了关于标准整数类型的存储大小和值范围的细节：
 
-      类型	          存储大小	                        值范围
-      char	          1 字节	                -128 到 127 或 0 到 255
-    unsigned char    	1 字节	                        0 到 255
-    signed char      	1 字节	                       -128 到 127
-      int	         2 或 4 字节	    -32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647
-    unsigned int	   2 或 4 字节	             0 到 65,535 或 0 到 4,294,967,295
-     short	          2 字节	                     -32,768 到 32,767
-    unsigned short	  2 字节	                        0 到 65,535
-      long	          4 字节	               -2,147,483,648 到 2,147,483,647
-    unsigned long	    4 字节	                     0 到 4,294,967,295
+       类型	            存储大小	                           值范围
+       char	          1 字节	                     -128 到 127 或 0 到 255
+    unsigned char    	1 字节	                             0 到 255
+    signed char      	1 字节	                           -128 到 127
+       int	        2 或 4 字节	    -32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647
+    unsigned int	   2 或 4 字节	               0 到 65,535 或 0 到 4,294,967,295
+      short	          2 字节	                         -32,768 到 32,767
+    unsigned short	     2 字节	                            0 到 65,535
+       long	          4 字节	                   -2,147,483,648 到 2,147,483,647
+    unsigned long	     4 字节	                       0 到 4,294,967,295
     
 ### * 浮点类型
 
 下表列出了关于标准浮点类型的存储大小、值范围和精度的细节：
 
-       类型	        存储大小	        值范围	               精度
-      float	         4 字节	    1.2E-38 到 3.4E+38	      6 位小数
-      double	       8 字节	    2.3E-308 到 1.7E+308	    15 位小数
-     long double	  16 字节	   3.4E-4932 到 1.1E+4932	  19 位小数
+        类型	     存储大小	            值范围	            精度
+       float	       4 字节	    1.2E-38 到 3.4E+38	      6 位小数
+       double	       8 字节	    2.3E-308 到 1.7E+308	     15 位小数
+     long double	  16 字节	   3.4E-4932 到 1.1E+4932	     19 位小数
 
 
 `具体数据类型的学习请同学们在课后自主学习完成`。
 
+在这里举一个例子：
+
+    #include<stdio.h>
+    int main()
+     {
+	   int m,n;
+	   char ch[10],ch1,ch2;
+	   scanf("%d",&m);
+	   scanf("%c",&ch1);
+	   scanf("%s",ch);/* ch对于用户而言是数组名，对计算机而言是数组的首地址，此处可以不加*& */ 
+	   scanf("%c",&ch2);
+	   printf("%d %d %s %d\n",m,ch1,ch,ch2);	
+	   return 0;
+    }
+ 
+ 上述程序输入为45 yuyan，输出为45 32 yuyan 10。
 
 
 ## 编写一个加减乘除运算的C程序
@@ -174,3 +190,8 @@ C 中的类型可分为以下几种：
      \"     代表一个双引号字符
      \?	    代表一个问号
      \0     空字符(NUL)
+
+## Reference
+[1](https://www.runoob.com/cprogramming/c-input-output.html)[https://www.runoob.com/cprogramming/c-input-output.html]
+
+[2](https://www.runoob.com/cprogramming/c-data-types.html)[https://www.runoob.com/cprogramming/c-data-types.html]
